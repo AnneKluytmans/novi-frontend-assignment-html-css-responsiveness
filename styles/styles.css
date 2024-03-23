@@ -12,24 +12,82 @@ Table of Contents:
     1. Global Styles
 ////////////////////////*/
 
+:root {
+    --peach: #F9C48B;
+    --atomic-tangerine: #F69051;
+    --burnt-sienna: #F26D40;
+    --black-bean:#260803;
+    --seashell: #FDEFEC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
+    background-color: var(--peach);
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
+    color: var(--black-bean);
+}
+
+img {
+    width: 100%;
 }
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 .5rem 0;
+}
 
+p {
+    margin: .8rem 0;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
-
-
+.information-section {
+    background-color: var(--seashell);
+    box-shadow: 0 .05rem .25rem rgba(0, 0, 0, 0.16);
+    border-radius: .5rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
 
 /*////////////////////////
-    2. Media Queries
+    4. Media Queries
 ////////////////////////*/
+
+/* voor tablets */
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+    body {
+        background-color: var(--atomic-tangerine);
+    }
+}
+
+/* voor desktops en groter */
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        background-color: var(--burnt-sienna);
+    }
+}
+
